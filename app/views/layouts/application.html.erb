@@ -11,14 +11,25 @@
 
   <body>
     <header id="main_navigation" class="clearfix">
-      <a href="#" class="name">Jonathon Schloss</a>
+      <%= link_to "Jonathon Schloss", root_path, class: "name" %>
       <nav>
         <%= link_to 'Articles', posts_path %>
         <a href="#">Projects</a>
         <a href="contact.html">Contact</a>
-      </nav>
+      </nav> 
     </header>
 
-  <%= yield %>
+    <%= yield %>
+
+    <footer id="main_footer">
+      <p class="copyright">&copy; 2016 Jonathon Schloss</p>
+      <nav>
+        <a href="https://twitter.com/jschloss309" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/jschloss309" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/Jschloss309" target="_blank"><i class="fa fa-github"></i></a>
+        <a href="https://www.instagram.com/j.schloss/" target="_blank"><i class="fa fa-instagram"></i></a>
+      </nav>
+    </footer>
+
   </body>
 </html>

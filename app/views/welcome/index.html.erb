@@ -1,0 +1,28 @@
+<div class="wrapper wrapper_padding clearfix">
+    <div class="col-1 about homepage_content">
+      <h2>About</h2>
+      <hr>
+      <p>A Hyper Active Caffeinated Euphoric Millennial!</p>
+		  <p>I'm a Developer in Fort Lauderdale. I'm currently pursuing a longtime passion of mine: to become a Full Stack Developer. I love to create but, more importantly, I love to learn. On the opposite side of the spectrum, I put my focus towards soft skills, such as Agile Development and Software Presentations. My interests go beyond the realm of just coding; I love the design aspect, as well as the interaction between the product and user.</p>
+    </div>
+    <div class="col-2 homepage_content">
+      <h2>Stuff I've written</h2>
+      <hr>
+
+      <% @posts.each do |post| %>
+        <h3><a href="#"><%= link_to post.title, post %></a></h3>
+        <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
+      <% end %>
+
+    </div>
+    <div class="col-3 homepage_content">
+      <h2>Stuff I've Built</h2>
+      <hr>
+      <h3><a href="#">dv_blog</a></h3>
+      <p class="date">October 27, 2016</p>
+      <h3><a href="#">a2e Dribble Clone</a></h3>
+      <p class="date">October 27, 2016</p>
+      <h3><a href="#">Notetistry</a></h3>
+      <p class="date">October 27, 2016</p>
+    </div>
+  </div>
